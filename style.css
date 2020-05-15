@@ -1,19 +1,83 @@
-#home {
-  text-align: right;
+/* Style the header of the site, specifically the logo/title and the nave bar. */
+header {
+  background-color: #1a9494;
+  /* Moves the logo/title to the left and the nav to the right by setting the header container to flexbox and then setting the justify to put space inbetween. */
+  display: flex;
+  justify-content: space-between;
 }
 
+header > h1 {
+  padding-left: 10px;
+}
+
+/* Custom nav menu styling start. */
+header > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+header > ul li {
+  float: left;
+}
+
+header > ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+}
+
+header > ul li a:hover {
+  background-color: #111; /* Changes the color of the background of links you mouse over in the nav menu */
+}
+/* Custom nav menu styling end. */
+
+/* Move the numbers in an ordered list to be next to the items, specifically when the list is centered. */
+ol {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Default stylings, applied to the body */
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background-color: rgb(165, 212, 212);
+}
+
+/* Styling for the home/intro section via id. */
+#home {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Styling for the about me section via id. */
 #about {
   text-align: center;
 }
 
+/* Styling for the portfolio section via id. */
 #portfolio {
+  padding-left: 10px;
   text-align: left;
 }
 
+/* Styling for the services section via id. */
 #services {
   text-align: center;
 }
 
+/* Styling for the contact section via id. */
 #contact {
   text-align: right;
+  padding-right: 10px;
+}
+
+/* Styling for the foot of the page. */
+footer {
+  padding-left: 10px;
 }

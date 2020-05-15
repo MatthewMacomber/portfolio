@@ -7,7 +7,7 @@ let projects = [
   },
   ]
 
-// Inserts each project object from the projects array into the proper part of the website.
+// Inserts each project object from the projects array into the proper part of the website as a unordered list.
 for (let i = 0; i < projects.length; i++) {
-  document.getElementById('portfolio').innerHTML += '<ol>' + projects[i].name + '</ol>';
+  document.getElementById('portfolio').innerHTML += '<ul>' + projects[i].name + '</ul>';
 }
