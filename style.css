@@ -51,25 +51,68 @@ body {
 
 /* Styling for the home/intro section via id. */
 #home {
-  text-align: right;
+  display: flex;
+  justify-content: space-evenly;
   padding-right: 10px;
+}
+
+#home-text {
+  text-align: right;
 }
 
 /* Styling for the about me section via id. */
 #about {
   text-align: center;
+  background-image: linear-gradient(to right,rgb(128 ,128, 128), rgb(165, 212, 212), rgb(128 ,128, 128));  
+}
+
+#about > ol {
+  justify-content: space-evenly;
+  counter-reset: itemCount;
+}
+#about > ol > li {
+  display: inline-block;
+}
+#about > ol > li:before {
+  content: counter( itemCount ) ".";
+  counter-increment: itemCount;
+  padding-right: 0.25em;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 /* Styling for the portfolio section via id. */
 #portfolio {
-  padding-left: 10px;
-  text-align: left;
+  text-align: center;
+  padding: 10px
 }
 
-/* Styling for the services section via id. */
+#portfolio > ul {
+  align-items: center; /* Default */
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#portfolio > ul > ul {
+    display: inline-block;
+    flex: 0 1 auto; /* Default */
+    padding: 10px;
+    list-style-type: none;
+}
+
+/* Adjust image button for projects to not have excess borders.*/
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for the services section via id if added.
 #services {
   text-align: center;
-}
+}*/
 
 /* Styling for the contact section via id. */
 #contact {

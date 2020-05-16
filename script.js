@@ -1,13 +1,39 @@
 let projects = [
   {
-    name: "First Project"
+    name: "First Project",
+    picture: "https://via.placeholder.com/150",
+    description: "This is the first Project. (placeholder)",
+    githubLink: "github.com",
+    liveLink: "example.com",
   },
   {
-    name: "Second Project"
+    name: "Second Project",
+    picture: "https://via.placeholder.com/150",
+    description: "This is the second project. (placeholder)",
+    githubLink: "github.com",
+    liveLink: "example.com",
   },
-  ]
+  {
+    name: "Third Project",
+    picture: "https://via.placeholder.com/150",
+    description: "This is the third project. (placeholder)",
+    githubLink: "github.com",
+    liveLink: "example.com",
+  }
+]
 
 // Inserts each project object from the projects array into the proper part of the website as a unordered list.
 for (let i = 0; i < projects.length; i++) {
-  document.getElementById('portfolio').innerHTML += '<ul>' + projects[i].name + '</ul>';
+  document.getElementById('projects').innerHTML += '<ul>' + projects[i].name + '<br><button onclick="showHide(' + i + ')"><img src="' + projects[i].picture + '"></button>' + '<div id="' + i + '" style="display: none"><p>' + projects[i].description + '</p><p>Github: <a href="' + projects[i].githubLink + '">' + projects[i].githubLink + '</a></p><p>Live/Demo: <a href="' + projects[i].liveLink + '">' + projects[i].liveLink + '</a></p></div>' + '</ul>';
+  // ^ Currently only adds the name of the project.
+}
+
+function showHide(idNum) {
+  console.log(idNum)
+  var x = document.getElementById(idNum);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
