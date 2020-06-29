@@ -58,12 +58,19 @@ body {
 
 #home-text {
   text-align: right;
+  padding-top: 50px;
+}
+
+#home img {
+  padding-top: 10px;
 }
 
 /* Styling for the about me section via id. */
 #about {
   text-align: center;
   background-image: linear-gradient(to right,rgb(128 ,128, 128), rgb(165, 212, 212), rgb(128 ,128, 128));  
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #about > ol {
@@ -74,7 +81,7 @@ body {
   display: inline-block;
 }
 #about > ol > li:before {
-  content: counter( itemCount ) ".";
+  content: "[" counter( itemCount ) "]";
   counter-increment: itemCount;
   padding-right: 0.25em;
   font-weight: bold;
@@ -102,6 +109,11 @@ body {
     list-style-type: none;
 }
 
+#portfolio img {
+  height: 150px;
+  width: 150px;
+}
+
 /* Adjust image button for projects to not have excess borders.*/
 button {
   border: none;
@@ -115,10 +127,27 @@ button:hover {
 
 
 
-/* Styling for the services section via id if added.
+/* Styling for the services section via id if added.*/
 #services {
   text-align: center;
-}*/
+}
+
+#services ol {
+  list-style: none;
+  counter-reset: my-counter;
+}
+
+#services ol li {
+  counter-increment: my-counter;
+  margin-bottom: 10px;
+}
+
+#services ol li::before {
+  content: counter(my-counter) "]>> ";
+  color: darkblue;
+  font-weight: bold;
+  font-size: 1.25em;
+}
 
 /* Styling for the contact section via id. */
 #contact {

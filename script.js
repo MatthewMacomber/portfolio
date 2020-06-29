@@ -1,22 +1,22 @@
 let projects = [
   {
-    name: 'First Project',
-    picture: 'https://via.placeholder.com/150',
-    description: 'This is the first Project. (placeholder)',
+    name: 'Cyberdeck',
+    picture: 'images/cyberdeckPlaceholder.png',
+    description: 'This project is all about building a complex upgradable \'cyberdeck\' in the styles given by the book Necromancer by William Gibson.',
     githubLink: 'http://github.com',
     liveLink: 'http://example.com',
   },
   {
     name: 'Second Project',
     picture: 'https://via.placeholder.com/150',
-    description: 'This is the second project. (placeholder)',
+    description: 'This is the first Project. (placeholder)',
     githubLink: 'http://github.com',
     liveLink: 'http://example.com',
   },
   {
-    name: 'Cyberdeck',
+    name: 'Third Project',
     picture: 'https://via.placeholder.com/150',
-    description: 'This project is all about building a complex upgradable \'cyberdeck\' in the styles given by the book Necromancer by William Gibson.',
+    description: 'This is the second project. (placeholder)',
     githubLink: 'http://github.com',
     liveLink: 'http://example.com',
   }
