@@ -109,6 +109,12 @@ button {
   margin: 0;
 }
 
+button:hover {
+  background: blue;
+}
+
+
+
 /* Styling for the services section via id if added.
 #services {
   text-align: center;
