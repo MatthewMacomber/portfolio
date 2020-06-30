@@ -157,13 +157,37 @@ button:hover {
 }
 
 #contact-form {
-  margin-top: 1em;
+  margin: 1em;
 }
 
 #contact-info {
   display: flex;
   flex-direction: column;
   padding-right: 10px;
+}
+
+#contact-form fieldset {
+  border-style: solid;
+  border-color: black;
+  border-radius: 16px;
+}
+#contact-form fieldset div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact-form fieldset input,
+#contact-form fieldset textarea {
+  flex: 2;
+}
+
+legend {
+  background-color: lightgrey;
+  color: darkblue;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: black;
+  border-style: solid;
 }
 
 /* Styling for the foot of the page. */
