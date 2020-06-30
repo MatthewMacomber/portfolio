@@ -1,26 +1,23 @@
 /* Style the header of the site, specifically the logo/title and the nave bar. */
 header {
+  display: flex;
+  flex-direction: column;
   background: #1a9494;
-  /* Moves the logo/title to the left and the nav to the right by setting the header container to flexbox and then setting the justify to put space inbetween. */
+  padding-top: 1em;
 }
 
 header > h1 {
-  padding-left: 10px;
-  padding-top: 10px;
+  text-align: center;
   margin: 0%;
 }
 
 /* Custom nav menu styling start. */
 header > ul {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
   background-color: #333;
-}
-
-header > ul li {
-  float: left;
 }
 
 header > ul li a {
@@ -126,8 +123,6 @@ button:hover {
   background: blue;
 }
 
-
-
 /* Styling for the services section via id if added.*/
 #services {
   text-align: center;
@@ -179,10 +174,25 @@ footer {
 /* Desktop Specific Styling */
 @media all and (min-width: 800px) {
   header {
-
     /* Moves the logo/title to the left and the nav to the right by setting the header container to flexbox and then setting the justify to put space inbetween. */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding-top: 0;
+  }
+
+  header h1 {
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+
+  header > ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  header > ul li {
+    float: left;
   }
 
   #home {
