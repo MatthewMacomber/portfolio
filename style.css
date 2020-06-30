@@ -52,17 +52,18 @@ body {
 /* Styling for the home/intro section via id. */
 #home {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding-right: 10px;
 }
 
 #home-text {
-  text-align: right;
+  text-align: center;
   padding-top: 50px;
 }
 
 #home img {
   padding-top: 10px;
+  align-self: center;
 }
 
 /* Styling for the about me section via id. */
@@ -95,8 +96,8 @@ body {
 }
 
 #portfolio > ul {
-  align-items: center; /* Default */
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -151,7 +152,22 @@ button:hover {
 
 /* Styling for the contact section via id. */
 #contact {
-  text-align: right;
+  text-align: center;
+}
+
+#contact > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contact-form {
+  margin-top: 1em;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
   padding-right: 10px;
 }
 
@@ -161,11 +177,36 @@ footer {
 }
 
 /* Desktop Specific Styling */
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   header {
 
     /* Moves the logo/title to the left and the nav to the right by setting the header container to flexbox and then setting the justify to put space inbetween. */
     display: flex;
     justify-content: space-between;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #home-text {
+    text-align: right;
+  }
+
+  #home img {
+    margin-left: 1em;
+  }
+
+  #portfolio ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contact > div {
+    display: flex;
+    flex-direction: row;
   }
 }
