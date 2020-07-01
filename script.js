@@ -31,12 +31,17 @@ for (let i = 0; i < projects.length; i++) {
   document.getElementById('projects').innerHTML += '<ul>' + projects[i].name + '<br><button onclick="showHide(' + i + ')"><img src="' + projects[i].picture + '"></button>' + '<div id="' + i + '" style="display: none"><p>' + projects[i].description + '</p><p>Built with: ' + projects[i].skills + '<p>Github: <a href="' + projects[i].githubLink + '">' + projects[i].githubLink + '</a></p><p>Live/Demo: <a href="' + projects[i].liveLink + '">' + projects[i].liveLink + '</a></p></div>' + '</ul>';
 }
 
+// eslint-disable-next-line no-unused-vars
 function showHide(idNum) {
   // console.log(idNum);
   var x = document.getElementById(idNum);
+  if (idNum === 'secret') {
+    document.getElementById('secret').innerHTML = atob('PGRpdiBzdHlsZT0idGV4dC1hbGlnbjogY2VudGVyIj5IZWxsbywgdGhpcyBpcyBhIHNlY3JldCBhbmQgaGVyZSBpcyBhIGNvZGU6IFVyeXliLCB0YmJxIHdibyBiYSBmYnlpdmF0IGd1dmYgZnZ6Y3lyIGNobW15ciE8L2Rpdj4=');
+  }
   if (x.style.display === 'none') {
     x.style.display = 'block';
   } else {
     x.style.display = 'none';
   }
 }
+

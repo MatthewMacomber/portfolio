@@ -113,14 +113,17 @@ body {
 }
 
 /* Adjust image button for projects to not have excess borders.*/
-button {
+#portfolio button {
   border: none;
   padding: 0;
   margin: 0;
+  background: rgb(0, 0, 0);
+  box-shadow: 5px 10px rgb(189, 188, 188);
 }
 
-button:hover {
+#portfolio button:hover {
   background: blue;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Styling for the services section via id if added.*/
@@ -157,7 +160,7 @@ button:hover {
 }
 
 #contact-form {
-  margin: 1em;
+  margin-left: 1em;
 }
 
 #contact-info {
@@ -188,6 +191,12 @@ legend {
   padding: 5px;
   border-color: black;
   border-style: solid;
+}
+
+#data {
+  border: none;
+  outline: none;
+  background: inherit;
 }
 
 /* Styling for the foot of the page. */
