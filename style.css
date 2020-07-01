@@ -112,6 +112,10 @@ body {
   width: 150px;
 }
 
+#portfolio #built {
+  font-style: oblique;
+}
+
 /* Adjust image button for projects to not have excess borders.*/
 #portfolio button {
   border: none;

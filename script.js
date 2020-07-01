@@ -11,7 +11,7 @@ let projects = [
   {
     name: 'Second Project',
     picture: 'https://via.placeholder.com/150',
-    description: 'This is the first Project. (placeholder)',
+    description: 'This is the second Project. (placeholder)',
     skills: 'Programming, Photography',
     githubLink: 'http://github.com',
     liveLink: 'http://example.com',
@@ -19,7 +19,7 @@ let projects = [
   {
     name: 'Third Project',
     picture: 'https://via.placeholder.com/150',
-    description: 'This is the second project. (placeholder)',
+    description: 'This is the third project. (placeholder)',
     skills: 'Javascript, Node, SQL',
     githubLink: 'http://github.com',
     liveLink: 'http://example.com',
@@ -28,7 +28,7 @@ let projects = [
 
 // Inserts each project object from the projects array into the proper part of the website as a unordered list.
 for (let i = 0; i < projects.length; i++) {
-  document.getElementById('projects').innerHTML += '<ul>' + projects[i].name + '<br><button onclick="showHide(' + i + ')"><img src="' + projects[i].picture + '"></button>' + '<div id="' + i + '" style="display: none"><p>' + projects[i].description + '</p><p>Built with: ' + projects[i].skills + '<p>Github: <a href="' + projects[i].githubLink + '">' + projects[i].githubLink + '</a></p><p>Live/Demo: <a href="' + projects[i].liveLink + '">' + projects[i].liveLink + '</a></p></div>' + '</ul>';
+  document.getElementById('projects').innerHTML += '<ul>' + projects[i].name + '<br><button onclick="showHide(' + i + ')"><img src="' + projects[i].picture + '"></button>' + '<div id="' + i + '" style="display: none"><p>' + projects[i].description + '</p><p id="built">Built with: ' + projects[i].skills + '<p>Github: <a href="' + projects[i].githubLink + '">' + projects[i].githubLink + '</a></p><p>Live/Demo: <a href="' + projects[i].liveLink + '">' + projects[i].liveLink + '</a></p></div>' + '</ul>';
 }
 
 // eslint-disable-next-line no-unused-vars
