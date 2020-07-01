@@ -10,7 +10,7 @@
         <!-- Specific web fonts used in site, pulled from google fonts. -->
         <link href="style.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
+    <body id="body">
         <!-- Header, specifically for top banner space, used for Logo, Name, and/or navigation links. -->
         <header>
             <h1>Matthew Macomber</h1>
@@ -33,6 +33,11 @@
             </ul>
         </header>
         <main>
+            <!-- Button to toggle a font specifically for people with dyslexia type reading problems. -->
+            <div id="dm">
+                <button id="dmButton" onclick="dyslexiaMode()" style="font-family: opendyslexic;">Dyslexia View - Off</button>
+            </div>
+            
             <div id="home">
                 <img src="images/me.jpg" height="300" width="225" id="home-image">
                 <div id="home-text">

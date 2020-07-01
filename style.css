@@ -256,3 +256,20 @@ footer {
     flex-direction: row;
   }
 }
+
+#dm {
+  text-align: right;
+}
+
+#dmButton {
+  background: inherit;
+  outline: none;
+}
+
+@font-face {
+  font-family: 'opendyslexic';
+  src: url('/fonts/opendyslexic-regular.woff2') format('woff2'),
+       url('/fonts/opendyslexic-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

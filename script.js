@@ -45,3 +45,17 @@ function showHide(idNum) {
   }
 }
 
+// Adds support to swap to a dyslexia friendly font.
+let dysMode = false;
+// eslint-disable-next-line no-unused-vars
+function dyslexiaMode() {
+  if (dysMode === false) {
+    document.getElementById('body').style.fontFamily = 'opendyslexic';
+    document.getElementById('dmButton').textContent = 'Dyslexia View On';
+    dysMode = true;
+  } else {
+    document.getElementById('body').style.fontFamily = '\'Share Tech Mono\', monospace';
+    document.getElementById('dmButton').textContent = 'Dyslexia View Off';
+    dysMode = false;
+  }
+}
