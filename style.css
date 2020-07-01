@@ -268,8 +268,8 @@ footer {
 
 @font-face {
   font-family: 'opendyslexic';
-  src: url('/fonts/opendyslexic-regular.woff2') format('woff2'),
-       url('/fonts/opendyslexic-regular.woff') format('woff');
+  src: url('../portfolio/fonts/opendyslexic-regular.woff2') format('woff2'),
+       url('../portfolio/fonts/opendyslexic-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
