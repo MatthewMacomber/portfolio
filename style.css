@@ -199,6 +199,7 @@ legend {
   background: rgba(0, 0, 0, 0);
   margin: 0;
   padding: 0;
+  cursor: text;
 }
 
 /* Styling for the foot of the page. */
