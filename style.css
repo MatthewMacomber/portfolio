@@ -14,17 +14,21 @@ header > h1 {
 /* Custom nav menu styling start. */
 header > ul {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   list-style-type: none;
   overflow: hidden;
   background-color: #333;
+}
+
+header > ul li {
+  float: left;
 }
 
 header > ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 30px 16px;
+  padding: 1em 0.5em;
   text-decoration: none;
 }
 
@@ -229,10 +233,24 @@ footer {
   header > ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
   }
 
   header > ul li {
     float: left;
+  }
+
+  header > ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
   }
 
   #home {
