@@ -1,29 +1,29 @@
 'use strict';
 let projects = [
   {
+    name: 'GOAT',
+    picture: 'images/goat-site.png',
+    description: 'A gamified goal oriented task management tool.',
+    skills: 'Javascript, Design, Node.js, Express, React, PostgreSQL',
+    githubLink: 'https://github.com/MatthewMacomber/goat-client',
+    liveLink: 'https://goat-client.vercel.app/',
+  },
+  {
+    name: 'The Codes',
+    picture: 'images/thecodes-site.png',
+    description: 'A website for sharing and solving text based codes and ciphers.',
+    skills: 'Javascript, Node.js, text-to-image, Express, React, Design, SQL',
+    githubLink: 'https://github.com/MatthewMacomber/TheCodes-client',
+    liveLink: 'https://thecodes-client.vercel.app/',
+  },
+  {
     name: 'Cyberdeck',
     picture: 'images/cyberdeckPlaceholder.png',
     description: 'This project is all about building a complex upgradable \'cyberdeck\' in the styles given by the book Necromancer by William Gibson.',
-    skills: '3D Modeling, Electronics Assembly, Assembly and Python Programming',
-    githubLink: 'http://github.com',
-    liveLink: 'http://example.com',
+    skills: '3D Modeling, Electronics Design and Assembly, Assembly, Lua and Python Programming',
+    githubLink: 'http://github.com/MatthewMacomber/CyberDeck',
+    liveLink: 'http://github.com/MatthewMacomber/CyberDeck',
   },
-  {
-    name: 'Second Project',
-    picture: 'https://via.placeholder.com/150',
-    description: 'This is the second Project. (placeholder)',
-    skills: 'Programming, Photography',
-    githubLink: 'http://github.com',
-    liveLink: 'http://example.com',
-  },
-  {
-    name: 'Third Project',
-    picture: 'https://via.placeholder.com/150',
-    description: 'This is the third project. (placeholder)',
-    skills: 'Javascript, Node, SQL',
-    githubLink: 'http://github.com',
-    liveLink: 'http://example.com',
-  }
 ];
 
 // Inserts each project object from the projects array into the proper part of the website as a unordered list.
