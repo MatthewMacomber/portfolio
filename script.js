@@ -28,7 +28,7 @@ let projects = [
 
 // Inserts each project object from the projects array into the proper part of the website as a unordered list.
 for (let i = 0; i < projects.length; i++) {
-  document.getElementById('projects').innerHTML += '<ul>' + projects[i].name + '<br><button onclick="showHide(' + i + ')"><img src="' + projects[i].picture + '"></button>' + '<div id="' + i + '" style="display: none"><p>' + projects[i].description + '</p><p id="built">Built with: ' + projects[i].skills + '<p>Github: <a href="' + projects[i].githubLink + '">' + projects[i].githubLink + '</a></p><p>Live/Demo: <a href="' + projects[i].liveLink + '">' + projects[i].liveLink + '</a></p></div>' + '</ul>';
+  document.getElementById('projects').innerHTML += '<li><h3>' + projects[i].name + '</h3><br><button onclick="showHide(' + i + ')"><img src="' + projects[i].picture + '"></button>' + '<div id="' + i + '" style="display: block"><p>' + projects[i].description + '</p><p id="built">Built with: ' + projects[i].skills + '<p>Github: <a href="' + projects[i].githubLink + '">' + projects[i].githubLink + '</a></p><p>Live/Demo: <a href="' + projects[i].liveLink + '">' + projects[i].liveLink + '</a></p></div>' + '</li>';
 }
 
 // eslint-disable-next-line no-unused-vars

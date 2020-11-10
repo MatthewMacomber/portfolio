@@ -94,18 +94,30 @@ body {
 /* Styling for the portfolio section via id. */
 #portfolio {
   text-align: center;
-  padding: 10px
+  padding: 10px;
+  width: 93%;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+#portfolio > h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#portfolio > p {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 #portfolio > ul {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 
-#portfolio > ul > ul {
+#portfolio > ul > li {
     display: inline-block;
     flex: 0 1 auto; /* Default */
     padding: 10px;
@@ -268,9 +280,12 @@ footer {
     margin-left: 1em;
   }
 
+  #portfolio {
+    width: 100%;
+  }
+
   #portfolio ul {
     display: flex;
-    flex-direction: row;
     justify-content: center;
   }
 
